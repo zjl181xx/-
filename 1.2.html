@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>浏览器信息</title>
+	
+</head>
+<body>
+	<div id="example"></div>
+</body>
+<script>
+	txt = "<p>浏览器代码名: " + navigator.appCodeName + "</p>";
+	txt+= "<p>浏览器名称: " + navigator.appName + "</p>"; 
+	txt+= "<p>浏览器平台和版本: " + navigator.appVersion + "</p>";
+	txt+= "<p>是否开启cookie: " + navigator.cookieEnabled + "</p>";
+	txt+= "<p>操作系统平台: " + navigator.platform + "</p>"; txt+= "<p>User-agent头部值: " + navigator.userAgent + "</p>"; 
+	document.getElementById("example").innerHTML=txt; 
+</script>
+</html>

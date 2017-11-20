@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div>
+		纯前端的话不知道怎么获取地理位置只能在用户登录的时候让用户选择
+		设置一个登录的cookie 关闭网站时清除
+		没有这个cookie 则向后端发送数据
+		写个空对象
+		如：local：{
+
+		}
+		每次添加时判断
+		if（!local[cityname]）{
+			local[cityname]=1
+		}else{
+			local[cityname]++
+		}
+		然后把这个对象发送给后端
+		在排名页面写forin这个对象
+		把前十筛选出来
+	</div>
+</body>
+</html>
